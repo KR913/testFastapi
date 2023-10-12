@@ -78,7 +78,7 @@ class MyTabs(QWidget):
       self.layout.addWidget(self.actinp)
 
       self.endbtn = QPushButton()
-      self.endbtn.setText("activate fastapi")
+      self.endbtn.setText("deactivate fastapi")
       self.endbtn.setFont(QFont('Times', 16))
       self.endbtn.clicked.connect(lambda: self.close_server())
       self.endbtn.setEnabled(False)
