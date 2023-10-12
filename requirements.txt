@@ -1,5 +1,5 @@
 PyQT5>=5.12.3
 pyperclip
-fastapi
+fastapi[all]
 uvicorn[standard]
 gunicorn
