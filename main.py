@@ -104,6 +104,9 @@ class MyTabs(QWidget):
 
 def server_test():
    app = FastAPI()
+   @app.get("/helloworld")
+   async def hello_world():
+      return {"result":"hello world"}
    @app.post("/uploadfile/")
    async def create_upload_file(file: UploadFile):
       fpath = os.path.join(os.getcwd(), file.filename)
